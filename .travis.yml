@@ -39,7 +39,7 @@ jobs:
       language: java
       script:
         - echo "Downloading allocations server $RELEASE_TAG"
-        - wget -P applications/allocations-server/build/libs https://github.com/$GITHUB_USERNAME/pal-tracker-distributed/releases/download/$RELEASE_TAG/allocations-server.jar
+        - wget -P applications/allocations-server/build/libs https://github.com/$GITHUB_USERNAME/pal-tracker-distributed-pre/releases/download/$RELEASE_TAG/allocations-server.jar
       before_deploy:
         - cp manifest-allocations.yml manifest.yml
         - echo "Deploying allocations server $RELEASE_TAG"
