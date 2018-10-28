@@ -7,7 +7,8 @@ DROP DATABASE IF EXISTS tracker_backlog_test;
 DROP DATABASE IF EXISTS tracker_registration_test;
 DROP DATABASE IF EXISTS tracker_timesheets_test;
 
-CREATE USER IF NOT EXISTS 'tracker'@'%' IDENTIFIED WITH mysql_native_password BY 'tracker';
+#CREATE USER IF NOT EXISTS 'tracker'@'%' IDENTIFIED WITH mysql_native_password BY 'tracker';
+CREATE USER IF NOT EXISTS 'tracker'@'%' IDENTIFIED BY 'tracker';
 GRANT ALL PRIVILEGES ON *.* TO 'tracker'@'%' identified by 'tracker';
 FLUSH PRIVILEGES;
 
