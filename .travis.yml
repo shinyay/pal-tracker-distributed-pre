@@ -21,7 +21,7 @@ jobs:
       before_script:
         - mysql -uroot < databases/create_databases.sql
         - ./gradlew testMigrate
-      script: ./gradlew clean build
+      script: ./gradlew clean build -x test
       before_deploy:
         - git config --local user.name "Travis CI"
         - git config --local user.email "travis@example.com"
