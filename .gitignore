@@ -1,5 +1,6 @@
 .gradle
 build
+!build/dependenciesGraph/
 .idea
 *.iml
 *.ipr
